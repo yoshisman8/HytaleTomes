@@ -3,8 +3,9 @@
   "Failed": {
     "Type": "Charging",
     "Effects": {
-      "WorldSoundEventId": "SFX_Skeleton_Mage_Spellbook_Charge",
-      "ItemAnimationId": "CastHurlCharging"
+      "ItemAnimationId": "CastHurlCharging",
+      "WorldSoundEventId": "SFX_Spellbook_Charge",
+      "ClearSoundEventOnFinish": true
     },
     "HorizontalSpeedMultiplier": 0.5,
     "Next": {
@@ -27,9 +28,13 @@
             "Vyklade_Spellbook_Cost_Check"
           ]
         },
-        "CancelOnItemChange": false
+        "CancelOnItemChange": false,
+        "Effects": {
+          "WorldSoundEventId": "SFX_Spellbook_Cast"
+        }
       }
-    }
+    },
+    "CancelOnOtherClick": true
   },
   "Next": {
     "Type": "Replace",

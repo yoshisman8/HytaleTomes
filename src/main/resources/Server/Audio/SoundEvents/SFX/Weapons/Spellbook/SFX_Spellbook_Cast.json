@@ -1,0 +1,26 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Staff/FireCrystalStaffShot_1.ogg",
+        "Sounds/Weapons/Staff/FireCrystalStaffShot_2.ogg",
+        "Sounds/Weapons/Staff/FireCrystalStaffShot_3.ogg",
+        "Sounds/Weapons/Staff/FireCrystalStaffShot_4.ogg"
+      ],
+      "StartDelay": 0.2,
+      "RandomSettings": {
+        "MinVolume": -0.9151498112135024,
+        "MinPitch": -1.8240371213405997,
+        "MaxPitch": 1.6500422849992202
+      }
+    },
+    {
+      "Files": [
+        "Sounds/Magic/Portals/Portal_Open_01.ogg"
+      ]
+    }
+  ],
+  "PreventSoundInterruption": false,
+  "Parent": "SFX_Attn_Moderate",
+  "Volume": -3
+}

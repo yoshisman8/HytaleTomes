@@ -1,0 +1,50 @@
+{
+  "Type": "DamageEntity",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Physical": 5
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact_Light"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Force": 5,
+      "RelativeZ": -5
+    },
+    "WorldSoundEventId": "SFX_Unarmed_Impact",
+    "WorldParticles": [
+      {
+        "SystemId": "Impact_Blade_01"
+      }
+    ]
+  },
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "ChangeStat",
+            "StatModifiers": {
+              "Mana": 1.5,
+              "SignatureEnergy": 0.75
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": 0,
+            "AdjustHeldItemDurability": -0.5,
+            "NotifyOnBreak": true,
+            "RequiredGameMode": "Adventure"
+          }
+        ]
+      }
+    ]
+  }
+}

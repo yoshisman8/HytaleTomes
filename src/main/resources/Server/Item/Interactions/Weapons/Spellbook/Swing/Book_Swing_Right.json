@@ -33,10 +33,10 @@
                   "Type": "Replace",
                   "DefaultValue": {
                     "Interactions": [
-                      "Book_Swing_Right_Damage"
+                      "Spellbook_Swing_Damage"
                     ]
                   },
-                  "Var": "Book_Swing_Right_Damage",
+                  "Var": "Spellbook_Swing_Damage",
                   "DefaultOk": true
                 }
               ]

@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
     "Name": "server.items.Weapons.Adamantite_Spellbook.name",
-    "Description": "server.items.Weapons.Spellbook_Generic.description"
+    "Description": "server.items.Weapons.Adamantite_Spellbook.description"
   },
   "Categories": [
     "Items.Weapons"
@@ -40,12 +40,6 @@
       "SignatureEnergy"
     ],
     "StatModifiers": {
-      "Mana": [
-        {
-          "CalculationType": "Additive",
-          "Amount": 40
-        }
-      ],
       "SignatureEnergy": [
         {
           "CalculationType": "Additive",
@@ -98,8 +92,8 @@
           "Type": "ChangeStat",
           "Parent": "Vyklade_Spellbook_Cast_Cost",
           "StatModifiers": {
-            "Mana": -8,
-            "Stamina": -0.5
+            "Mana": -5,
+            "Stamina": -0.65
           }
         }
       ]
@@ -110,8 +104,8 @@
           "Type": "StatsCondition",
           "Parent": "Vyklade_Spellbook_Cost_Check",
           "Costs": {
-            "Mana": 9,
-            "Stamina": 0.5
+            "Mana": 5,
+            "Stamina": 0.7
           }
         }
       ]
@@ -123,7 +117,7 @@
           "Parent": "Vyklade_Spellbook_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 25
+              "Physical": 20
             }
           }
         }
@@ -149,7 +143,7 @@
             "Height": 10,
             "MaxLiveCount": 3,
             "StartRadius": 5,
-            "DamageAmount": 3,
+            "DamageAmount": 3.75,
             "Model": "Deployable_Spellbook_Trap",
             "ModelPreview": "Deployable_Fire_Trap_Preview",
             "DamageInterval": 0.25
@@ -157,6 +151,14 @@
           "PreviewStatConditions": {
             "DeployablePreview": 1
           }
+        }
+      ]
+    },
+    "Spellbook_Held_Config": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Weapon_Grimoire_Mana_Regen"
         }
       ]
     }

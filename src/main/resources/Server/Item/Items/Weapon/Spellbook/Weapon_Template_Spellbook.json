@@ -58,7 +58,8 @@
   "Interactions": {
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
     "Primary": "Root_Spellbook_Primary",
-    "Ability1": "Root_Spellbook_Signature"
+    "Ability1": "Root_Spellbook_Signature",
+    "Held": "Root_Spellbook_Held"
   },
   "MaxDurability": 100,
   "InteractionVars": {
@@ -68,7 +69,8 @@
           "Type": "ChangeStat",
           "Parent": "Vyklade_Spellbook_Cast_Cost",
           "StatModifiers": {
-            "Mana": -6
+            "Mana": -5,
+            "Stamina": -0.65
           }
         }
       ]
@@ -79,7 +81,8 @@
           "Type": "StatsCondition",
           "Parent": "Vyklade_Spellbook_Cost_Check",
           "Costs": {
-            "Mana": 7
+            "Mana": 5,
+            "Stamina": 0.7
           }
         }
       ]
@@ -91,7 +94,7 @@
           "Parent": "Vyklade_Spellbook_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 12
+              "Physical": 13
             }
           }
         }
@@ -104,7 +107,7 @@
           "Parent": "Vyklade_Spellbook_Signature_Spawn",
           "Config": {
             "Type": "Aoe",
-            "Id": "SignatureTrap",
+            "Id": "SpellbookSignatureTrap",
             "LiveDuration": 5,
             "Invulnerable": true,
             "Shape": "Cylinder",
@@ -117,14 +120,22 @@
             "Height": 10,
             "MaxLiveCount": 3,
             "StartRadius": 5,
-            "DamageInterval": 1,
-            "DamageAmount": 0,
+            "DamageAmount": 1.5,
             "Model": "Deployable_Spellbook_Trap",
-            "ModelPreview": "Deployable_Fire_Trap_Preview"
+            "ModelPreview": "Deployable_Fire_Trap_Preview",
+            "DamageInterval": 0.25
           },
           "PreviewStatConditions": {
             "DeployablePreview": 1
           }
+        }
+      ]
+    },
+    "Spellbook_Held_Config": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Weapon_Grimoire_Mana_Regen"
         }
       ]
     }

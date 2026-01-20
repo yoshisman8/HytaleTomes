@@ -2,8 +2,8 @@
   "Type": "StatsCondition",
   "Failed": "Spellbook_Cast_Fail",
   "Costs": {
-    "Mana": 26,
-    "Stamina": 0.75
+    "Mana": 5,
+    "Stamina": 1
   },
   "Next": {
     "Type": "Parallel",

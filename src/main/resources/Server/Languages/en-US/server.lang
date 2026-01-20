@@ -2,14 +2,23 @@ items.Vyklade.Potion_Mana_Small.description = Doubles your <color is="#0096ff">M
 items.Vyklade.Potion_Mana.description = Doubles your <color is="#0096ff">Mana</color> regeneration for 6 minutes.
 
 items.Weapons.Copper_Spellbook.name= Copper Spellbook
+items.Weapons.Copper_Spellbook.description= Stories talk about arcanists able to channel pure magic through intricate writing on otherwise mundane books.\n\nConsumes <color is="#0096ff">5 Mana</color> to fire a magical, piercing beam.\nEnhances natural <color is="#0096ff">Mana Regeneration</color> when held.\n\n<color is="#ffffff">Attack Statistics</color>\n    <color is="#B5A077">Swing Attack:</color> 5         <color is="#B5A077">Charged Attack:</color> 11\n    <color is="#B5A077">Charge Time:</color> 0.8s     <color is="#B5A077">Signature DPS:</color> 9
+
 items.Weapons.Iron_Spellbook.name= Iron Spellbook
+items.Weapons.Iron_Spellbook.description= Despite using mundane books; The fine craftsmanship of the tome and intricate patterns written within its pages makes it easier to cast stronger spells.\n\nConsumes <color is="#0096ff">5 Mana</color> to fire a magical, piercing beam.\nEnhances natural <color is="#0096ff">Mana Regeneration</color> when held.\n\n<color is="#ffffff">Attack Statistics</color>\n    <color is="#B5A077">Swing Attack:</color> 5         <color is="#B5A077">Charged Attack:</color> 13\n    <color is="#B5A077">Charge Time:</color> 0.8s     <color is="#B5A077">Signature DPS:</color> 10 DPS
+
 items.Weapons.Thorium_Spellbook.name= Thorium Spellbook
+items.Weapons.Thorium_Spellbook.description= Through higher qualiry metals, spellbooks can channel magic more efficiently. Thorium offers quite an excellent medium for mana, turns out.\n\nConsumes <color is="#0096ff">5 Mana</color> to fire a magical, piercing beam.\nEnhances natural <color is="#0096ff">Mana Regeneration</color> when held.\n\n<color is="#ffffff">Attack Statistics</color>\n    <color is="#B5A077">Swing Attack:</color> 5         <color is="#B5A077">Charged Attack:</color> 16\n    <color is="#B5A077">Charge Time:</color> 0.8s     <color is="#B5A077">Signature DPS:</color> 12 DPS
+
 items.Weapons.Cobalt_Spellbook.name= Cobalt Spellbook
+items.Weapons.Cobalt_Spellbook.description= Despite the frigid nature of the material, this book spellbook feels perfect for a cozy read inside a warm log cabin.\n\nConsumes <color is="#0096ff">5 Mana</color> to fire a magical, piercing beam.\nEnhances natural <color is="#0096ff">Mana Regeneration</color> when held.\n\n<color is="#ffffff">Attack Statistics</color>\n    <color is="#B5A077">Swing Attack:</color> 5         <color is="#B5A077">Charged Attack:</color> 16\n    <color is="#B5A077">Charge Time:</color> 0.8s     <color is="#B5A077">Signature DPS:</color> 12 DPS
+
 items.Weapons.Adamantite_Spellbook.name= Adamantite Spellbook
+items.Weapons.Adamantite_Spellbook.description= Unfortunately, despite its reagents being so ingrained with heat energy, the magic that comes out of this spellbook is pure in its attunement. At least your house wont sent on fire!\n\nConsumes <color is="#0096ff">5 Mana</color> to fire a magical, piercing beam.\nEnhances natural <color is="#0096ff">Mana Regeneration</color> when held.\n\n<color is="#ffffff">Attack Statistics</color>\n    <color is="#B5A077">Swing Attack:</color> 5         <color is="#B5A077">Charged Attack:</color> 20\n    <color is="#B5A077">Charge Time:</color> 0.8s     <color is="#B5A077">Signature DPS:</color> 15 DPS
+
 items.Weapons.Mithril_Spellbook.name= Mithril Spellbook
-items.Weapons.Spellbook_Generic.description= Consumes <color is="#0096ff">Mana</color> to fire a short piercing beam.
-items.Weapons.Cobalt_Spellbook.description= Consumes <color is="#0096ff">Mana</color> to fire a short piercing beam.\nUses more <color is="#0096ff">Mana</color> to deal the <color is="#b89b27">Strongest</color> base damage.
-items.Weapons.Adamantite_Spellbook.description= Sets foes on <color is="#ba342b">Fire</color>.\nConsumes <color is="#0096ff">Mana</color> to fire a short piercing beam.
-items.Weapons.Mithril_Spellbook.description= Deals <color is="#ffffff">True</color> damage, Ignoring all <color is="#b89b27">Resistances</color>.\nConsumes <color is="#0096ff">Mana</color> to fire a short piercing beam.
+items.Weapons.Mithril_Spellbook.description= An elegant spellbook crafted out of the finest metal one can obtain. It channels magic like no other, and delivers powerful bursts of magic that can even pierce through conventional <color is="#B5A077">Resistances</color>!\n\nConsumes <color is="#0096ff">5 Mana</color> to fire a magical, piercing beam.\nEnhances natural <color is="#0096ff">Mana Regeneration</color> when held.\n\n<color is="#ffffff">Attack Statistics</color>\n    <color is="#B5A077">Swing Attack:</color> 5         <color is="#B5A077">Charged Attack:</color> 25\n    <color is="#B5A077">Charge Time:</color> 0.8s     <color is="#B5A077">Signature DPS:</color> 19 DPS
+
+items.Weapons.Spellbook_Generic.description= Consumes <color is="#0096ff">5 Mana</color> to fire a short piercing beam.
 
 benchCategories.spellbooks= Spellbooks

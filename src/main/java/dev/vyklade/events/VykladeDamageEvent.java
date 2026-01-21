@@ -10,7 +10,6 @@ import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.modules.entity.damage.Damage;
 import com.hypixel.hytale.server.core.modules.entity.damage.DamageModule;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import dev.vyklade.VykladeSpellbooks;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
@@ -36,7 +35,6 @@ public class VykladeDamageEvent extends EntityEventSystem<EntityStore, Damage> {
                 if (playerComponent != null) {
                     damage.setAmount(0);
                     damage.setCancelled(true);
-                    VykladeSpellbooks.LOGGER.atInfo().log("Cancelled Deployable Player Damage Event!");
                 } else {
                     EffectControllerComponent effectControllerComponent = store.getComponent(entityRef, EffectControllerComponent.getComponentType());
                     assert effectControllerComponent != null;

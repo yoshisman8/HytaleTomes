@@ -36,15 +36,8 @@
             "EndDistance": 13
           },
           "IgnoreOwner": true,
-          "RunTime": 0.1
-        }
-      ]
-    },
-    {
-      "Interactions": [
-        {
-          "Type": "LaunchProjectile",
-          "ProjectileId": "Vyklade_Magic_Beam"
+          "RunTime": 0.1,
+          "FailOn": "Neither"
         }
       ]
     },
@@ -54,6 +47,14 @@
           "Type": "ModifyInventory",
           "AdjustHeldItemDurability": -0.33,
           "RequiredGameMode": "Adventure"
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "Projectile",
+          "Config": "Vyklade_Spellbook_Magic_Circle"
         }
       ]
     }

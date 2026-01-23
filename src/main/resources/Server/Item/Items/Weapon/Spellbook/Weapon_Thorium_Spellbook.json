@@ -71,13 +71,14 @@
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Weapon_Bench",
+        "Id": "Arcanebench",
         "Categories": [
-          "Weapon_Spellbook"
+          "Arcane_Spellbooks"
         ],
         "RequiredTierLevel": 2
       }
-    ]
+    ],
+    "TimeSeconds": 3
   },
   "Interactions": {
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",

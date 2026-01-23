@@ -14,44 +14,12 @@
   },
   "MinScale": 0.7,
   "MaxScale": 0.7,
-  "AnimationSets": {
-    "Idle": {
-      "Animations": [
-        {
-          "Animation": "Items/Animations/Spin_Roll/Spin_Roll_Left.blockyanim",
-          "BlendingDuration": 0
-        }
-      ]
-    }
-  },
   "Particles": [
     {
-      "Color": "#39b8b5",
-      "SystemId": "GreenOrbTrail",
-      "TargetNodeName": "Fireball"
+      "SystemId": "Vyklade_Magic_Circle"
     },
     {
-      "Color": "#3990b8",
-      "Scale": 5,
-      "SystemId": "Spectre_Void_Head"
-    },
-    {
-      "SystemId": "Vyklade_Magic_Circle",
-      "TargetNodeName": "Root",
-      "TargetEntityPart": "Entity",
-      "Scale": 1,
-      "RotationOffset": {
-        "Yaw": 0,
-        "Pitch": 0
-      },
-      "PositionOffset": {
-        "Y": 0,
-        "Z": 0
-      },
-      "DetachedFromModel": false
-    },
-    {
-      "SystemId": "ForgottenTemple_Beam",
+      "SystemId": "Vyklade_ForgottenTemple_Beam",
       "RotationOffset": {
         "Yaw": 0,
         "Pitch": 0,
@@ -59,34 +27,20 @@
       },
       "PositionOffset": {
         "Z": 0,
-        "Y": 10
-      }
+        "Y": 5
+      },
+      "Scale": 0.5
     },
     {
-      "SystemId": "NatureBeam",
+      "SystemId": "Vyklade_NatureBeam",
       "RotationOffset": {
         "Pitch": 90
       },
+      "Scale": 1,
+      "Color": "#06ffd8",
       "PositionOffset": {
-        "Y": 4
-      },
-      "Scale": 2,
-      "Color": "#06ffd8"
-    }
-  ],
-  "Trails": [
-    {
-      "TrailId": "SkeletonMage",
-      "TargetNodeName": "Origin_Item"
-    },
-    {
-      "RotationOffset": {
-        "Pitch": 0,
-        "Roll": 0,
-        "Yaw": 90
-      },
-      "TrailId": "SkeletonMage",
-      "TargetNodeName": "Origin_Item"
+        "Y": 3
+      }
     }
   ],
   "Texture": "Items/Projectiles/Projectile_default.png"

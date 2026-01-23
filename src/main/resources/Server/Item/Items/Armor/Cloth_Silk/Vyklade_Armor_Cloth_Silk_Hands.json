@@ -1,0 +1,143 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Silk_Hands.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Silk.description"
+  },
+  "Parent": "Armor_Iron_Hands",
+  "Quality": "Rare",
+  "ItemLevel": 35,
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Silk_Hands.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.6,
+    "Translation": [
+      0.6,
+      -31.2
+    ]
+  },
+  "Model": "Items/Armors/Silk/Hands.blockymodel",
+  "Texture": "Items/Armors/Silk/Hands_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Silk",
+        "Quantity": 8
+      },
+      {
+        "Quantity": 3,
+        "ItemId": "Plant_Crop_Mana3"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Gloves"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 7,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.03,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.07,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.002,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ],
+      "Stamina": [
+        {
+          "$Comment": "Positive stamina regeneration values",
+          "Interval": 0.25,
+          "Amount": 0.001,
+          "RegenType": "Additive",
+          "Conditions": [
+            {
+              "Id": "Stat",
+              "Stat": "StaminaRegenDelay",
+              "Amount": 0
+            },
+            {
+              "Id": "Stat",
+              "Stat": "Stamina",
+              "Amount": 0,
+              "Comparison": "Gte"
+            },
+            {
+              "Id": "Wielding",
+              "Inverse": true
+            },
+            {
+              "Id": "Sprinting",
+              "Inverse": true
+            },
+            {
+              "Id": "Gliding",
+              "Inverse": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Silk"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

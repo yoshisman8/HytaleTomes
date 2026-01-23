@@ -1,0 +1,105 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Wool_Hands.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Wool.description"
+  },
+  "Parent": "Armor_Iron_Hands",
+  "Quality": "Common",
+  "ItemLevel": 10,
+  "Icon": "Icons/ItemsGenerated/Armor_Leather_Light_Hands.png",
+  "IconProperties": {
+    "Rotation": [
+      29.815,
+      45.565,
+      25.315
+    ],
+    "Scale": 0.645,
+    "Translation": [
+      0.9,
+      -0.9
+    ]
+  },
+  "Model": "Items/Armors/Leather_Light/Hands.blockymodel",
+  "Texture": "Items/Armors/Leather_Light/Hands_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Wool",
+        "Quantity": 2
+      },
+      {
+        "Quantity": 1,
+        "ItemId": "Ingredient_Bar_Copper"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Gloves"
+        ]
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 2,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.01,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.05,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.001,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Wool"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

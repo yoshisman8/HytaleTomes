@@ -1,0 +1,70 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Deco_SpiderWeb.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Deco_SpiderWeb.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Dungeons/SpiderWeb.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Dungeons/SpiderWeb_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "UpDownNESW",
+    "Flags": {},
+    "Gathering": {
+      "Tools": [
+        {
+          "Type": "Shears",
+          "DropList": "Web_Drops"
+        }
+      ],
+      "UseDefaultDropWhenPlaced": true,
+      "Soft": {
+        "DropList": "Web_Drops",
+        "IsWeaponBreakable": true
+      }
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Web",
+    "CustomModelScale": 0.7,
+    "ParticleColor": "#c4c3c3"
+  },
+  "PlayerAnimationsId": "Block",
+  "Set": "",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Translation": [
+      4.3,
+      -17.3
+    ],
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

@@ -13,15 +13,15 @@
   "Texture": "Items/Weapons/Spellbook/Weapon_Mithril_Spellbook.png",
   "PlayerAnimationsId": "Spellbook",
   "IconProperties": {
-    "Scale": 0.6,
+    "Scale": 0.7,
     "Rotation": [
       45,
       90,
       0
     ],
     "Translation": [
-      -11,
-      -11
+      -7.8,
+      -7.8
     ]
   },
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
@@ -67,13 +67,14 @@
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Weapon_Bench",
+        "Id": "Arcanebench",
         "Categories": [
-          "Weapon_Spellbook"
+          "Arcane_Spellbooks"
         ],
         "RequiredTierLevel": 3
       }
-    ]
+    ],
+    "TimeSeconds": 3
   },
   "Interactions": {
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",

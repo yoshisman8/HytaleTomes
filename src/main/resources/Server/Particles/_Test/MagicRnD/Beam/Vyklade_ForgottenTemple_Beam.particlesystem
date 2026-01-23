@@ -1,0 +1,78 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "ForgottenTemple_Beam2",
+      "StartDelay": 0.3,
+      "PositionOffset": {
+        "X": -3.0
+      },
+      "LifeSpan": {
+        "Min": 1.6,
+        "Max": 2.0
+      }
+    },
+    {
+      "SpawnerId": "ForgottenTemple_Beam_Lightning",
+      "StartDelay": 0.3,
+      "PositionOffset": {
+        "X": -3.0
+      },
+      "SpawnRate": {
+        "Min": 1.5,
+        "Max": 2.1
+      }
+    },
+    {
+      "SpawnerId": "ForgottenTemple_Beam",
+      "StartDelay": 0.3,
+      "SpawnRate": {
+        "Min": 1.4,
+        "Max": 1.9
+      }
+    },
+    {
+      "SpawnerId": "ForgottenTemple_Beam_Static",
+      "PositionOffset": {
+        "X": 0.0,
+        "Z": 0.0
+      },
+      "StartDelay": 0.3
+    },
+    {
+      "SpawnerId": "Memory_ImplosionStart",
+      "LifeSpan": {
+        "Min": 3.0,
+        "Max": 3.0
+      },
+      "StartDelay": 0.0
+    },
+    {
+      "SpawnerId": "Memory_Bench_SparksVortex"
+    },
+    {
+      "SpawnerId": "PlayerSpawn_Flash",
+      "StartDelay": 0.3
+    },
+    {
+      "SpawnerId": "PlayerSpawn_Distortion",
+      "PositionOffset": {
+        "Y": 0.0
+      },
+      "StartDelay": 0.3
+    },
+    {
+      "SpawnerId": "PlayerSpawn_SmokeOut",
+      "PositionOffset": {
+        "Y": 0.0
+      },
+      "StartDelay": 0.3
+    },
+    {
+      "SpawnerId": "ForgottenTemple_Bench_Distortion",
+      "StartDelay": 0.3
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 16.0,
+  "LifeSpan": 0.5
+}

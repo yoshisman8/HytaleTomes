@@ -1,0 +1,33 @@
+{
+  "Input": [
+    {
+      "ItemId": "Vyklade_Armor_Cloth_Linen_Hands",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Fabric_Scrap_Linen",
+    "Quantity": 5
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Fabric_Scrap_Linen",
+      "Quantity": 5
+    },
+    {
+      "Quantity": 1,
+      "ItemId": "Wood_Azure_Trunk"
+    },
+    {
+      "ItemId": "Ingredient_Bar_Iron",
+      "Quantity": 2
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

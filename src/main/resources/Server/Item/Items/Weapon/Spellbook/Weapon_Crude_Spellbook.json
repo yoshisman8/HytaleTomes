@@ -1,0 +1,140 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapons.Crude_Spellbook.name",
+    "Description": "server.items.Weapons.Crude_Spellbook.description"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Icon": "Icons/ItemsGenerated/Weapon_Crude_Spellbook.png",
+  "Quality": "Common",
+  "ItemLevel": 10,
+  "Model": "Items/Weapons/Spellbook/Book.blockymodel",
+  "Texture": "Items/Weapons/Spellbook/Weapon_Crude_Spellbook.png",
+  "PlayerAnimationsId": "Spellbook",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -7.8,
+      -7.8
+    ]
+  },
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "MaxStack": 1,
+  "Scale": 1.2,
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Spellbook"
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 12
+        }
+      ]
+    }
+  },
+  "ItemSoundSetId": "ISS_Weapons_Books",
+  "Interactions": {
+    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Primary": "Root_Spellbook_Primary",
+    "Ability1": "Root_Spellbook_Signature",
+    "Held": "Root_Spellbook_Held"
+  },
+  "MaxDurability": 100,
+  "InteractionVars": {
+    "Spellbook_Attack_Damage": {
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "Parent": "Vyklade_Spellbook_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 9
+            }
+          }
+        }
+      ]
+    },
+    "Spellbook_Signature_Config": {
+      "Interactions": [
+        {
+          "Type": "SpawnDeployableFromRaycast",
+          "Parent": "Vyklade_Spellbook_Signature_Spawn",
+          "Config": {
+            "Type": "Aoe",
+            "Id": "SpellbookSignatureTrap",
+            "LiveDuration": 5,
+            "Invulnerable": true,
+            "Shape": "Cylinder",
+            "DamageCause": "SignatureMagic",
+            "AttackOwner": false,
+            "AttackTeam": false,
+            "AllowPlaceOnWalls": true,
+            "WireframeDebugVisuals": true,
+            "DebugVisuals": false,
+            "Height": 10,
+            "MaxLiveCount": 3,
+            "StartRadius": 5,
+            "DamageAmount": 1.75,
+            "Model": "Deployable_Spellbook_Trap",
+            "ModelPreview": "Deployable_Fire_Trap_Preview",
+            "DamageInterval": 0.25
+          },
+          "PreviewStatConditions": {
+            "DeployablePreview": 1
+          }
+        }
+      ]
+    },
+    "Spellbook_Held_Config": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Weapon_Grimoire_Mana_Regen"
+        }
+      ]
+    }
+  },
+  "RenderDeployablePreview": true,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Hide_Light",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 10
+      },
+      {
+        "Quantity": 2,
+        "ResourceTypeId": "Wood_Trunk"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Workbench",
+        "Categories": [
+          "Workbench_Survival"
+        ]
+      }
+    ],
+    "TimeSeconds": 3
+  }
+}

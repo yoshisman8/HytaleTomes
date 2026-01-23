@@ -1,0 +1,119 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Cindercloth_Legs.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Cindercloth.description"
+  },
+  "Parent": "Armor_Iron_Legs",
+  "Quality": "Rare",
+  "ItemLevel": 45,
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Cindercloth_Legs.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.37,
+    "Translation": [
+      0,
+      -22.8
+    ]
+  },
+  "Model": "Items/Armors/Cindercloth/Legs.blockymodel",
+  "Texture": "Items/Armors/Cindercloth/Legs_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+        "Quantity": 22
+      },
+      {
+        "Quantity": 7,
+        "ItemId": "Plant_Crop_Mana3"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 6
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Pants"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.13,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.003,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Charged": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.04
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

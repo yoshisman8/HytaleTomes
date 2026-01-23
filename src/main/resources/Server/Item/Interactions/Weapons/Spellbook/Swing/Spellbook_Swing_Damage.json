@@ -3,7 +3,8 @@
   "DamageCalculator": {
     "BaseDamage": {
       "Physical": 5
-    }
+    },
+    "Class": "Light"
   },
   "Effects": {
     "CameraEffect": "Impact_Light"

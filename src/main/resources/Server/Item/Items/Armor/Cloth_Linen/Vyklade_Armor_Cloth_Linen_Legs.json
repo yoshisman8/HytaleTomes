@@ -1,0 +1,113 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Linen_Legs.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Linen.description"
+  },
+  "Parent": "Armor_Iron_Legs",
+  "Quality": "Uncommon",
+  "ItemLevel": 15,
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Linen_Legs.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.6,
+    "Translation": [
+      0.6,
+      -11.7
+    ]
+  },
+  "Model": "Items/Armors/Linen/Legs.blockymodel",
+  "Texture": "Items/Armors/Linen/Legs_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 13
+      },
+      {
+        "Quantity": 6,
+        "ItemId": "Wood_Azure_Trunk"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Pants"
+        ]
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Shoes",
+      "Pants"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 7,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.05,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.001,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Linen"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

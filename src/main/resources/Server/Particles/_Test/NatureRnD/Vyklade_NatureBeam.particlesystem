@@ -1,0 +1,44 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "NatureBeam_Core"
+    },
+    {
+      "SpawnerId": "NatureBeam_End",
+      "PositionOffset": {
+        "Z": -2.0
+      }
+    },
+    {
+      "SpawnerId": "NatureBeam_Beam"
+    },
+    {
+      "SpawnerId": "NatureBeam_Sparks",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "NatureBeam_Beam_Overlay"
+    },
+    {
+      "SpawnerId": "NatureBeam_Start2",
+      "PositionOffset": {
+        "Z": 2.2
+      }
+    },
+    {
+      "SpawnerId": "NatureBeam_Start",
+      "PositionOffset": {
+        "Z": 2.0
+      }
+    },
+    {
+      "SpawnerId": "NatureBeam_Glow_Start",
+      "PositionOffset": {
+        "Z": 2.0
+      }
+    }
+  ],
+  "CullDistance": 5,
+  "IsImportant": false,
+  "LifeSpan": 1
+}

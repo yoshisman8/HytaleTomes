@@ -1,0 +1,118 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Cindercloth_Chest.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Cindercloth.description"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Quality": "Rare",
+  "ItemLevel": 45,
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Cindercloth_Chest.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.4,
+    "Translation": [
+      0,
+      -17.4
+    ]
+  },
+  "Model": "Items/Armors/Cindercloth/Chest.blockymodel",
+  "Texture": "Items/Armors/Cindercloth/Chest_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+        "Quantity": 28
+      },
+      {
+        "Quantity": 8,
+        "ItemId": "Plant_Crop_Mana3"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 7
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Tunics"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.12,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.16,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 22,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.003,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Charged": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.06
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

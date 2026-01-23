@@ -1,0 +1,33 @@
+{
+  "Input": [
+    {
+      "ItemId": "Weapon_Cobalt_Spellbook",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
+    "Quantity": 2
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Leather_Heavy",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Ingredient_Bar_Cobalt",
+      "Quantity": 2
+    },
+    {
+      "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
+      "Quantity": 2
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

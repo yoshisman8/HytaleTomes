@@ -1,0 +1,33 @@
+{
+  "Input": [
+    {
+      "ItemId": "Vyklade_Armor_Cloth_Cindercloth_Chest",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+    "Quantity": 10
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+      "Quantity": 10
+    },
+    {
+      "Quantity": 3,
+      "ItemId": "Plant_Crop_Mana3"
+    },
+    {
+      "ItemId": "Ingredient_Bar_Adamantite",
+      "Quantity": 2
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

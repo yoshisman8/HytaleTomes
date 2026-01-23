@@ -1,0 +1,78 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Deco_SpiderWeb_Flat.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Deco_SpiderWeb_Flat.png",
+  "Categories": [
+    "Blocks.Plants"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Dungeons/SpiderWeb_Rug.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Dungeons/SpiderWeb_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Props",
+    "Flags": {},
+    "RandomRotation": "YawStep90",
+    "Gathering": {
+      "Tools": [
+        {
+          "Type": "Shears",
+          "DropList": "Web_Drops"
+        }
+      ],
+      "UseDefaultDropWhenPlaced": true,
+      "Soft": {
+        "DropList": "Web_Drops",
+        "IsWeaponBreakable": true
+      }
+    },
+    "BlockParticleSetId": "Dust",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#c1c4c1",
+    "HitboxType": "Block_Flat",
+    "BlockSoundSetId": "Web",
+    "CustomModelScale": 0.65,
+    "VariantRotation": "DoublePipe"
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      7,
+      -11
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "Moss"
+    ]
+  },
+  "$Comment": " ",
+  "Scale": 0.8,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

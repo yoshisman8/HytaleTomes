@@ -1,0 +1,130 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Cotton_Hands.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Cotton.description"
+  },
+  "Parent": "Armor_Iron_Hands",
+  "Quality": "Rare",
+  "ItemLevel": 25,
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Cotton_Hands.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.59,
+    "Translation": [
+      0.6,
+      -32.4
+    ]
+  },
+  "Model": "Items/Armors/Cotton/Hands.blockymodel",
+  "Texture": "Items/Armors/Cotton/Hands_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Plant_Crop_Cotton_Item",
+        "Quantity": 9
+      },
+      {
+        "Quantity": 3,
+        "ItemId": "Plant_Crop_Mana2"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Gloves"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 7,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.02,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.06,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.002,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ],
+      "Health": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.002,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Cotton"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

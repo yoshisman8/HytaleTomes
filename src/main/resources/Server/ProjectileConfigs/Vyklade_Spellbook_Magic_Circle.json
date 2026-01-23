@@ -1,0 +1,48 @@
+{
+  "Model": "Vyklade_Spell_Magic_Orb",
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 1.5,
+          "Next": {
+            "Type": "RemoveEntity"
+          }
+        }
+      ]
+    },
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        }
+      ]
+    },
+    "ProjectileBounce": {
+      "Interactions": [
+        {
+          "Type": "RemoveEntity"
+        }
+      ]
+    }
+  },
+  "LaunchForce": 0.001,
+  "Physics": {
+    "Type": "Standard",
+    "BounceCount": 0,
+    "BounceLimit": 0,
+    "TerminalVelocityAir": 0.001,
+    "TerminalVelocityWater": 0.001
+  },
+  "SpawnOffset": {
+    "Z": -1.5
+  }
+}

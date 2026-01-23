@@ -1,0 +1,146 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Silk_Chest.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Silk.description"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Quality": "Rare",
+  "ItemLevel": 35,
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Silk_Chest.png",
+  "IconProperties": {
+    "Rotation": [
+      9,
+      47.3,
+      5.6
+    ],
+    "Scale": 0.425,
+    "Translation": [
+      -4.2,
+      -30.6
+    ]
+  },
+  "Model": "Items/Armors/Silk/Chest.blockymodel",
+  "Texture": "Items/Armors/Silk/Chest_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Silk",
+        "Quantity": 24
+      },
+      {
+        "Quantity": 7,
+        "ItemId": "Plant_Crop_Mana3"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 7
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Tunics"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.1,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.14,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.002,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ],
+      "Stamina": [
+        {
+          "$Comment": "Positive stamina regeneration values",
+          "Interval": 0.25,
+          "Amount": 0.001,
+          "RegenType": "Additive",
+          "Conditions": [
+            {
+              "Id": "Stat",
+              "Stat": "StaminaRegenDelay",
+              "Amount": 0
+            },
+            {
+              "Id": "Stat",
+              "Stat": "Stamina",
+              "Amount": 0,
+              "Comparison": "Gte"
+            },
+            {
+              "Id": "Wielding",
+              "Inverse": true
+            },
+            {
+              "Id": "Sprinting",
+              "Inverse": true
+            },
+            {
+              "Id": "Gliding",
+              "Inverse": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Silk"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

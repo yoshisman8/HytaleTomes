@@ -1,0 +1,29 @@
+{
+  "Input": [
+    {
+      "ItemId": "Weapon_Crude_Spellbook",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Fabric_Scrap_Wool",
+    "Quantity": 2
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Hide_Light",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Ingredient_Fibre",
+      "Quantity": 3
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

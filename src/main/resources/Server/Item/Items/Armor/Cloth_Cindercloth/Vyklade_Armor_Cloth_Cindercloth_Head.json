@@ -1,0 +1,121 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cloth_Cindercloth_Head.name",
+    "Description": "server.items.Vyklade_Armor_Cloth_Cindercloth.description"
+  },
+  "Parent": "Armor_Iron_Head",
+  "Quality": "Rare",
+  "ItemLevel": 45,
+  "Icon": "Icons/ItemsGenerated/Armor_Cloth_Cindercloth_Head.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.5,
+    "Translation": [
+      -1.8,
+      -1.8
+    ]
+  },
+  "Model": "Items/Armors/Cindercloth/Head.blockymodel",
+  "Texture": "Items/Armors/Cindercloth/Head_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+        "Quantity": 15
+      },
+      {
+        "Quantity": 5,
+        "ItemId": "Plant_Crop_Mana3"
+      },
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Type": "Crafting",
+        "Categories": [
+          "Arcane_Hoods"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 12,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.06,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.1,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Mana": [
+        {
+          "Interval": 0.25,
+          "Amount": 0.003,
+          "RegenType": "Percentage",
+          "Conditions": [
+            {
+              "Id": "Alive"
+            },
+            {
+              "Id": "Charging",
+              "Inverse": true
+            },
+            {
+              "Id": "NoDamageTaken",
+              "Delay": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Charged": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.03
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

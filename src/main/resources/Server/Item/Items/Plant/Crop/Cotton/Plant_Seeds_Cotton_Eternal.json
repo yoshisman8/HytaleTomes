@@ -1,0 +1,95 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Plant_Seeds_Cotton_Eternal.name",
+    "Description": "server.items.Plant_Seeds_Cotton_Eternal.description"
+  },
+  "Quality": "Uncommon",
+  "Categories": [
+    "Blocks.Plants"
+  ],
+  "Interactions": {
+    "Secondary": "Seed_Condition"
+  },
+  "InteractionVars": {
+    "SeedId": {
+      "Interactions": [
+        {
+          "Parent": "Seed_Place",
+          "BlockTypeToPlace": "Plant_Crop_Cotton_Block_Eternal"
+        }
+      ]
+    }
+  },
+  "Model": "Resources/Plants/SeedBag.blockymodel",
+  "Texture": "Resources/Plants/SeedBag_Textures/Cotton_Eternal.png",
+  "PlayerAnimationsId": "Item",
+  "Icon": "Icons/ItemsGenerated/Plant_Seeds_Cotton_Eternal.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0,
+      30,
+      15
+    ],
+    "Translation": [
+      2.5,
+      -11
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "Seeds"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "Recipe": {
+    "TimeSeconds": 0,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 80
+      },
+      {
+        "ItemId": "Plant_Crop_Cotton_Item",
+        "Quantity": 40
+      },
+      {
+        "ItemId": "Plant_Seeds_Cotton",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Plant_Seeds_Cotton_Eternal",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "RequiredTierLevel": 4,
+        "Type": "Crafting",
+        "Id": "Farmingbench",
+        "Categories": [
+          "Seeds"
+        ]
+      }
+    ],
+    "RequiredMemoriesLevel": 5
+  },
+  "ItemLevel": 14,
+  "Scale": 1.0,
+  "Particles": [
+    {
+      "SystemId": "Seeds_Eternal",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    }
+  ]
+}

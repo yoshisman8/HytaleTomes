@@ -1,0 +1,33 @@
+{
+  "Input": [
+    {
+      "ItemId": "Vyklade_Armor_Cloth_Cotton_Hands",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Plant_Crop_Cotton_Item",
+    "Quantity": 3
+  },
+  "Output": [
+    {
+      "ItemId": "Plant_Crop_Cotton_Item",
+      "Quantity": 3
+    },
+    {
+      "Quantity": 1,
+      "ItemId": "Plant_Crop_Mana2"
+    },
+    {
+      "ItemId": "Ingredient_Bar_Gold",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

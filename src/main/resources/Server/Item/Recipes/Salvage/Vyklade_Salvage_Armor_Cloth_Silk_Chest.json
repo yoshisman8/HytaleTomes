@@ -1,0 +1,33 @@
+{
+  "Input": [
+    {
+      "ItemId": "Vyklade_Armor_Cloth_Silk_Chest",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Fabric_Scrap_Silk",
+    "Quantity": 11
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Fabric_Scrap_Silk",
+      "Quantity": 11
+    },
+    {
+      "Quantity": 4,
+      "ItemId": "Plant_Crop_Mana3"
+    },
+    {
+      "ItemId": "Ingredient_Bar_Silver",
+      "Quantity": 2
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

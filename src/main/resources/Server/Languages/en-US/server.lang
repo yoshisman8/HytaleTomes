@@ -1,5 +1,5 @@
-items.Vyklade.Potion_Mana_Small.description = Doubles your <color is="#0096ff">Mana</color> regeneration for 2 minutes.
-items.Vyklade.Potion_Mana.description = Doubles your <color is="#0096ff">Mana</color> regeneration for 6 minutes.
+items.Vyklade.Potion_Mana_Small.description = Boosts your <color is="#0096ff">Mana Regeneration</color> for <color is="#ffffff">2:50</color>.
+items.Vyklade.Potion_Mana.description = Boosts your <color is="#0096ff">Mana Regeneration</color> for <color is="#ffffff">5:00</color>.
 
 items.Weapons.Crude_Spellbook.name= Crude Spellbook
 items.Weapons.Crude_Spellbook.description= Stories talk about arcanists able to channel pure magic through even the crudest and most barebone books.\n\nConsumes <color is="#0096ff">20 Mana</color> to fire a magical, piercing beam.\nEnhances natural <color is="#0096ff">Mana Regeneration</color> when held.\n\n<color is="#ffffff">Attack Statistics</color>\n    <color is="#B5A077">Swing Attack:</color> 5         <color is="#B5A077">Charged Attack:</color> 9\n    <color is="#B5A077">Charge Time:</color> 0.8s     <color is="#B5A077">Signature DPS:</color> 7
@@ -24,13 +24,10 @@ items.Weapons.Mithril_Spellbook.description= An elegant spellbook crafted out of
 
 items.Weapons.Spellbook_Generic.description= Consumes <color is="#0096ff">20 Mana</color> to fire a short piercing beam.
 
-benchCategories.spellbooks= Spellbooks
-benchCategories.implements= Implements
-
 items.Ingredient_Fabric_Scrap_Silk.description= Scraps made from silky fibers naturally formed inside various arachnids. Obtained either directly from the source, or carefully sheared off from their spun webs found deep inside cave systems.
 
-items.Vyklade_Armor_Cloth_Wool.description= Crude, warming robes meant to protect the frail arcanist while maintaining flexibility for spellcasting.\n\nLightly improves <color is="#0096ff">Mana Recovery</color>.
-items.Vyklade_Armor_Cloth_Linen.description= Breathable linen robes that offer more protection than crude wool.\n\nLightly improves <color is="#0096ff">Mana Recovery</color>.
-items.Vyklade_Armor_Cloth_Cotton.description= Comfortable and soft clothing that improves mana efficiency to boot!\n\nModerately improves <color is="#0096ff">Mana Recovery</color>.
-items.Vyklade_Armor_Cloth_Silk.description= Silky soft robes that feel wonderful to the touch and improves mana efficiency to boot!\n\nModerately improves <color is="#0096ff">Mana Recovery</color>.
-items.Vyklade_Armor_Cloth_Cindercloth.description= Mystical robes made from infernal material.\n\nGreatly improves <color is="#0096ff">Mana Recovery</color>.
+items.Vyklade_Armor_Cloth_Wool.description= Crude, warming robes meant to protect the frail arcanist while maintaining flexibility for spellcasting.\n\nLightly improves <color is="#0096ff">Mana Recovery</color>. 
+items.Vyklade_Armor_Cloth_Linen.description= Breathable linen robes that offer more protection than crude wool.\n\nLightly improves <color is="#0096ff">Mana Recovery</color>. 
+items.Vyklade_Armor_Cloth_Cotton.description= Comfortable and soft clothing that improves mana efficiency to boot!\n\nModerately improves <color is="#0096ff">Mana Recovery</color>\nGrants minor <color is="#DE205C">Health Regeneration</color>. 
+items.Vyklade_Armor_Cloth_Silk.description= Silky soft robes that feel wonderful to the touch and improves mana efficiency to boot!\n\nModerately improves <color is="#0096ff">Mana Recovery</color>\nMinorly improves <color is="#E2AB4B">Stamina Regeneration</color>. 
+items.Vyklade_Armor_Cloth_Cindercloth.description= Mystical robes made from infernal material. It flows with power beyond comprehension.\n\nGreatly improves <color is="#0096ff">Mana Recovery</color>. 

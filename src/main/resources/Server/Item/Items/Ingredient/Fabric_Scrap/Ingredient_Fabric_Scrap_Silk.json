@@ -1,0 +1,37 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Ingredient_Fabric_Scrap_Silk.name",
+    "Description": "server.items.Ingredient_Fabric_Scrap_Silk.description"
+  },
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "Model": "Resources/Materials/Fabric_Scrap.blockymodel",
+  "Texture": "Resources/Materials/Fabric_Scrap_Textures/Silk.png",
+  "Quality": "Common",
+  "ItemLevel": 10,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Translation": [
+      0,
+      -6
+    ],
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Fabric_Scrap_Silk.png",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "DropOnDeath": true
+}

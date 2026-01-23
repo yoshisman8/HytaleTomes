@@ -1,0 +1,58 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Plant_Seeds_Cotton.name",
+    "Description": "server.items.Plant_Seeds_Cotton.description"
+  },
+  "Parent": "Template_Seeds",
+  "Quality": "Junk",
+  "InteractionVars": {
+    "SeedId": {
+      "Interactions": [
+        {
+          "Parent": "Seed_Place",
+          "BlockTypeToPlace": "Plant_Crop_Cotton_Block"
+        }
+      ]
+    }
+  },
+  "Texture": "Resources/Plants/SeedBag_Textures/Cotton.png",
+  "Icon": "Icons/ItemsGenerated/Plant_Seeds_Cotton.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0.0,
+      30.0,
+      15.0
+    ],
+    "Translation": [
+      2.5,
+      -11.0
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 0,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 8
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Plant_Seeds_Cotton",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Farmingbench",
+        "Categories": [
+          "Seeds"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "ItemLevel": 8
+}

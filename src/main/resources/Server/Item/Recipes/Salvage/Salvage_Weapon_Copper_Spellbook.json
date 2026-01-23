@@ -1,0 +1,33 @@
+{
+  "Input": [
+    {
+      "ItemId": "Weapon_Copper_Spellbook",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Fabric_Scrap_Linen",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Ingredient_Leather_Light",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Ingredient_Bar_Copper",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Ingredient_Fabric_Scrap_Linen",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

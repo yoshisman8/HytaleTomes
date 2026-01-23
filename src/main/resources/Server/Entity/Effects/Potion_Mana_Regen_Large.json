@@ -2,7 +2,7 @@
   "StatusEffectIcon": "Icons/ItemsGenerated/Potion_Regen_Mana_Large.png",
   "OverlapBehavior": "Overwrite",
   "StatModifiers": {
-    "Mana": 1.3
+    "Mana": 1
   },
   "ValueType": "Percent",
   "Duration": 360,

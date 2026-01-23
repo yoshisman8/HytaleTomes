@@ -81,30 +81,6 @@
   },
   "MaxDurability": 100,
   "InteractionVars": {
-    "Spellbook_Cast_Cost": {
-      "Interactions": [
-        {
-          "Type": "ChangeStat",
-          "Parent": "Vyklade_Spellbook_Cast_Cost",
-          "StatModifiers": {
-            "Mana": -5,
-            "Stamina": -0.65
-          }
-        }
-      ]
-    },
-    "Spellbook_Cost_Check": {
-      "Interactions": [
-        {
-          "Type": "StatsCondition",
-          "Parent": "Vyklade_Spellbook_Cost_Check",
-          "Costs": {
-            "Mana": 5,
-            "Stamina": 0.7
-          }
-        }
-      ]
-    },
     "Spellbook_Attack_Damage": {
       "Interactions": [
         {

@@ -69,8 +69,8 @@
           "Type": "ChangeStat",
           "Parent": "Vyklade_Spellbook_Cast_Cost",
           "StatModifiers": {
-            "Mana": -5,
-            "Stamina": -0.65
+            "Stamina": -0.65,
+            "Mana": -20
           }
         }
       ]
@@ -81,8 +81,8 @@
           "Type": "StatsCondition",
           "Parent": "Vyklade_Spellbook_Cost_Check",
           "Costs": {
-            "Mana": 5,
-            "Stamina": 0.7
+            "Stamina": 0.7,
+            "Mana": 20
           }
         }
       ]

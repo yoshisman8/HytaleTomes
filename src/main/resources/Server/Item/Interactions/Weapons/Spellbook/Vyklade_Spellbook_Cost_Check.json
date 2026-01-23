@@ -2,7 +2,7 @@
   "Type": "StatsCondition",
   "Failed": "Spellbook_Cast_Fail",
   "Costs": {
-    "Mana": 5,
+    "Mana": 20,
     "Stamina": 1
   },
   "Next": {

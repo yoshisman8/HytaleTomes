@@ -1,8 +1,7 @@
 {
   "Type": "ChangeStat",
   "StatModifiers": {
-    "Mana": -20,
-    "Stamina": -0.65
+    "Mana": -20
   },
   "Next": "Vyklade_Spellbook_Cast_Charged"
 }

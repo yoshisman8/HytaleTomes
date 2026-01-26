@@ -1,0 +1,31 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "ApplyEffect",
+      "EffectId": "Stamina_Broken_Immune"
+    },
+    {
+      "Type": "StatsCondition",
+      "Costs": {
+        "Mana": 35
+      },
+      "Next": {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Mana": -35
+        },
+        "Next": {
+          "Type": "Replace",
+          "Var": "Guard_Bash_Selector",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              "Weapon_Spellbook_Secondary_Focus_Bash_Selector"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

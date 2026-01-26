@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "MagicPortal_StonesCircles",
+      "PositionOffset": {
+        "Z": 0.0,
+        "Y": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0
+      },
+      "MaxConcurrent": 1
+    }
+  ],
+  "IsImportant": false,
+  "CullDistance": 100
+}

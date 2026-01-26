@@ -11,36 +11,83 @@
     "Max": 100.0
   },
   "Particle": {
-    "Texture": "Particles/Textures/Circles/Portal_Runic_128.png",
-    "ScaleRatioConstraint": "None",
+    "Texture": "Particles/Textures/Circles/Portal_Runic.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "RandomFlipU",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 0.0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        },
+        "Color": "#ffdd5f",
+        "Rotation": {
+          "Z": {
+            "Min": 0.0,
+            "Max": 0.0
+          }
+        }
+      },
+      "10": {
+        "Opacity": 1.0
+      },
+      "12": {},
+      "30": {
+        "Color": "#01f0fd",
+        "Opacity": 1.0
+      },
+      "70": {
+        "Scale": {
+          "X": {
+            "Min": 2.0,
+            "Max": 2.0
+          },
+          "Y": {
+            "Max": 2.0,
+            "Min": 2.0
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Rotation": {
+          "Z": {
+            "Min": -90.0,
+            "Max": 90.0
+          }
+        },
+        "Color": "#242aff"
+      }
+    },
     "InitialAnimationFrame": {
-      "Opacity": 1.0,
+      "Opacity": 0.756,
       "FrameIndex": {
         "Min": 0,
         "Max": 0
       },
-      "Color": "#4cc2ff",
-      "Rotation": {
-        "X": {
-          "Min": 90.0,
-          "Max": 90.0
-        }
-      },
       "Scale": {
         "X": {
-          "Min": 1.95,
-          "Max": 1.95
+          "Min": 0.4,
+          "Max": 0.4
         },
         "Y": {
-          "Max": 1.95,
-          "Min": 1.95
+          "Min": 0.4,
+          "Max": 0.4
         }
       }
     },
-    "UseSpriteBlending": true,
-    "Animation": {
-      "0": {}
-    }
+    "UseSpriteBlending": true
   },
   "CameraOffset": -0.1,
   "UVMotion": {
@@ -50,5 +97,9 @@
     "SpeedY": -0.08,
     "Scale": 1.68
   },
-  "UseEmitDirection": true
+  "UseEmitDirection": true,
+  "ParticleLifeSpan": {
+    "Min": 1,
+    "Max": 1
+  }
 }

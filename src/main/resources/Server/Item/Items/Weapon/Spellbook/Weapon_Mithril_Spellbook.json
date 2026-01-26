@@ -11,7 +11,6 @@
   "ItemLevel": 60,
   "Model": "Items/Weapons/Spellbook/Weapon_Mithril_Spellbook.blockymodel",
   "Texture": "Items/Weapons/Spellbook/Weapon_Mithril_Spellbook.png",
-  "PlayerAnimationsId": "Spellbook",
   "IconProperties": {
     "Scale": 0.7,
     "Rotation": [
@@ -77,7 +76,7 @@
     "TimeSeconds": 3
   },
   "Interactions": {
-    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Secondary": "Root_Spellbook_Secondary",
     "Primary": "Root_Spellbook_Primary",
     "Ability1": "Root_Spellbook_Signature"
   },
@@ -123,15 +122,8 @@
           },
           "PreviewStatConditions": {
             "DeployablePreview": 1
-          }
-        }
-      ]
-    },
-    "Spellbook_Held_Config": {
-      "Interactions": [
-        {
-          "Type": "ApplyEffect",
-          "EffectId": "Weapon_Grimoire_Mana_Regen"
+          },
+          "MaxPlacementDistance": 100
         }
       ]
     }

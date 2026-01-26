@@ -4,11 +4,17 @@
     "ProjectileSpawn": {
       "Interactions": [
         {
-          "Type": "Simple",
-          "RunTime": 1.5,
-          "Next": {
-            "Type": "RemoveEntity"
-          }
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 0.9
+            },
+            {
+              "Type": "RemoveEntity",
+              "Entity": "User"
+            }
+          ]
         }
       ]
     },

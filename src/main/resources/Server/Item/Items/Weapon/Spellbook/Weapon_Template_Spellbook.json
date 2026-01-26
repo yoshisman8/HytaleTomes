@@ -11,7 +11,7 @@
   "ItemLevel": 0,
   "Model": "Items/Weapons/Spellbook/Grimoire.blockymodel",
   "Texture": "Items/Weapons/Spellbook/Weapon_Copper_Spellbook.png",
-  "PlayerAnimationsId": "Spellbook",
+  "PlayerAnimationsId": "Vyklade_Spellbook",
   "IconProperties": {
     "Scale": 0.7,
     "Rotation": [
@@ -56,7 +56,7 @@
   },
   "ItemSoundSetId": "ISS_Weapons_Books",
   "Interactions": {
-    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Secondary": "Root_Spellbook_Secondary",
     "Primary": "Root_Spellbook_Primary",
     "Ability1": "Root_Spellbook_Signature",
     "Held": "Root_Spellbook_Held"
@@ -69,8 +69,7 @@
           "Type": "ChangeStat",
           "Parent": "Vyklade_Spellbook_Cast_Cost",
           "StatModifiers": {
-            "Mana": -20,
-            "Stamina": -0.65
+            "Mana": -20
           }
         }
       ]
@@ -82,7 +81,7 @@
           "Parent": "Vyklade_Spellbook_Cost_Check",
           "Costs": {
             "Mana": 20,
-            "Stamina": 0.7
+            "Stamina": 0.1
           }
         }
       ]
@@ -135,7 +134,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "Weapon_Grimoire_Mana_Regen"
+          "EffectId": "Weapon_Grimoire_Mana_Focus"
         }
       ]
     }

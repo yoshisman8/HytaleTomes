@@ -32,9 +32,9 @@
       "BlendingDuration": 0
     },
     "Guard": {
-      "ThirdPerson": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Guard/Guard.blockyanim",
-      "ThirdPersonMoving": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Guard/Guard_Moving.blockyanim",
-      "FirstPerson": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Guard/Guard_FPS.blockyanim",
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Guard.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Guard_Moving.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Guard_FPS.blockyanim",
       "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
       "KeepPreviousFirstPersonAnimation": true,
       "BlendingDuration": 0.1,
@@ -46,6 +46,42 @@
       "FirstPerson": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Guard_Bash/Guard_Bash_FPS.blockyanim",
       "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim",
       "KeepPreviousFirstPersonAnimation": true
+    },
+    "Focus": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Guard.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Guard_Moving.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Guard_FPS.blockyanim",
+      "KeepPreviousFirstPersonAnimation": true
+    },
+    "FocusBash": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Push.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Push_Moving.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/Book_Push_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim",
+      "Speed": 1,
+      "BlendingDuration": 0,
+      "Looping": false
+    },
+    "SwingRight": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Right/Swing_Right.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Right/Swing_Right_Moving.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Right/Swing_Right_FPS.blockyanim",
+      "Speed": 1.5,
+      "BlendingDuration": 0.1
+    },
+    "SwingLeft": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Left/Swing_Left.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Left/Swing_Left_Moving.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Left/Swing_Left_FPS.blockyanim",
+      "Speed": 1.5,
+      "BlendingDuration": 0.1
+    },
+    "SwingDown": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Down/Swing_Down.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Down/Swing_Down_Moving.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Swing_Down/Swing_Down_FPS.blockyanim",
+      "Speed": 1.5,
+      "BlendingDuration": 0.1
     }
   },
   "WiggleWeights": {

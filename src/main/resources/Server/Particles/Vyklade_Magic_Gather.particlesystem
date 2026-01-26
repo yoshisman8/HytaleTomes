@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "MagicPortal_Circles"
+    },
+    {
+      "SpawnerId": "MagicPortal_ForgottenTemple_Sparks",
+      "PositionOffset": {
+        "Y": 0,
+        "Z": -1
+      }
+    },
+    {
+      "SpawnerId": "MagicPortal_ForgottenTemple_Sparks"
+    }
+  ]
+}

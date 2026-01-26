@@ -72,7 +72,7 @@
       ],
       "Projectile": [
         {
-          "Amount": 0.011,
+          "Amount": 0.11,
           "CalculationType": "Multiplicative"
         }
       ]
@@ -86,10 +86,6 @@
           "Conditions": [
             {
               "Id": "Alive"
-            },
-            {
-              "Id": "Charging",
-              "Inverse": true
             },
             {
               "Id": "NoDamageTaken",

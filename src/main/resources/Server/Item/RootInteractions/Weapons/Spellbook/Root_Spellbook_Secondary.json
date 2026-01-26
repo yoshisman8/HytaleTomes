@@ -1,0 +1,38 @@
+{
+  "RequireNewClick": true,
+  "Rules": {
+    "Interrupting": [
+      "Primary"
+    ]
+  },
+  "Interactions": [
+    {
+      "Type": "Replace",
+      "Var": "Guard_Start",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Weapon_Spellbook_Secondary_Focus"
+        ]
+      },
+      "Effects": {
+        "ItemPlayerAnimationsId": {
+          "Parent": "Spellbook",
+          "Animations": {
+            "bubble": {
+              "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/bubble.blockyanim",
+              "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/bubble.blockyanim",
+              "FirstPerson": "Characters/Animations/Items/Dual_Handed/Spellbook/Attacks/Book_Guard/bubble.blockyanim",
+              "Looping": true
+            }
+          }
+        }
+      }
+    }
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

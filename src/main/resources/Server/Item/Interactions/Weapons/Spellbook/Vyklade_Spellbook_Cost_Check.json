@@ -3,7 +3,7 @@
   "Failed": "Spellbook_Cast_Fail",
   "Costs": {
     "Mana": 20,
-    "Stamina": 1
+    "Stamina": 0.05
   },
   "Next": {
     "Type": "Parallel",

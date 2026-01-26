@@ -29,7 +29,7 @@
           {
             "Type": "ChangeStat",
             "StatModifiers": {
-              "Mana": 4.5,
+              "Mana": 8,
               "SignatureEnergy": 0.75
             }
           }

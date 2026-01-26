@@ -1,0 +1,35 @@
+{
+  "Type": "DamageEntity",
+  "Parent": "DamageEntityParent",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Physical": 0
+    }
+  },
+  "Effects": {
+    "CameraEffect": "Impact"
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Type": "Point",
+      "Force": 12,
+      "VelocityConfig": {
+        "AirResistance": 0.99,
+        "AirResistanceMax": 0.98,
+        "GroundResistance": 0.94,
+        "GroundResistanceMax": 0.3,
+        "Threshold": 3.0,
+        "Style": "Linear"
+      },
+      "VelocityType": "Set",
+      "VelocityY": 12
+    },
+    "WorldSoundEventId": "SFX_T1_Impact_Blunt",
+    "LocalSoundEventId": "SFX_T1_Impact_Blunt",
+    "WorldParticles": [
+      {
+        "SystemId": "Impact_Sword_Bash"
+      }
+    ]
+  }
+}

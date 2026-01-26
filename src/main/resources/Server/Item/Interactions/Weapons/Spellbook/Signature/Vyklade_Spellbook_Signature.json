@@ -1,7 +1,7 @@
 {
   "Type": "StatsCondition",
   "Costs": {
-    "SignatureEnergy": 12
+    "SignatureEnergy": 0
   },
   "Next": {
     "Type": "ChangeStat",

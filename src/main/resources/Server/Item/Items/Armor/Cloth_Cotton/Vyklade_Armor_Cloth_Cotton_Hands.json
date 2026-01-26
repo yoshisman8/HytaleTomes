@@ -83,14 +83,6 @@
           "Conditions": [
             {
               "Id": "Alive"
-            },
-            {
-              "Id": "Charging",
-              "Inverse": true
-            },
-            {
-              "Id": "NoDamageTaken",
-              "Delay": 2.5
             }
           ]
         }

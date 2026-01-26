@@ -1,0 +1,114 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "ParticleRotateWithSpawner": true,
+  "Particle": {
+    "Texture": "Particles/Textures/Circles/Portal_Runic_128.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "InitialAnimationFrame": {
+      "Opacity": 1.0,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Rotation": {
+        "X": {
+          "Min": 90.0,
+          "Max": 90.0
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 1.8,
+          "Max": 1.8
+        },
+        "Y": {
+          "Max": 1.8,
+          "Min": 1.8
+        }
+      }
+    },
+    "UseSpriteBlending": true,
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 0.0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        },
+        "Color": "#ffdd5f",
+        "Rotation": {
+          "Z": {
+            "Min": 0.0,
+            "Max": 0.0
+          }
+        }
+      },
+      "10": {
+        "Opacity": 1.0
+      },
+      "12": {},
+      "30": {
+        "Color": "#01f0fd",
+        "Opacity": 1.0
+      },
+      "70": {
+        "Scale": {
+          "X": {
+            "Min": 1.1,
+            "Max": 1.1
+          },
+          "Y": {
+            "Max": 1.1,
+            "Min": 1.1
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Rotation": {
+          "Z": {
+            "Min": -90.0,
+            "Max": 90.0
+          }
+        },
+        "Color": "#242aff"
+      }
+    },
+    "UVOption": "RandomFlipU"
+  },
+  "CameraOffset": -0.1,
+  "UVMotion": {
+    "Texture": "Particles/Textures/UVMotion/FlowMap3.png",
+    "SpeedX": 0.08,
+    "Strength": 0.0,
+    "SpeedY": -0.08,
+    "Scale": 1.68
+  },
+  "UseEmitDirection": false,
+  "ParticleLifeSpan": {
+    "Min": 1,
+    "Max": 1
+  },
+  "MaxConcurrentParticles": 2,
+  "SpawnRate": {
+    "Min": 0,
+    "Max": 1
+  },
+  "SpawnBurst": true,
+  "WaveDelay": {
+    "Max": 0.2
+  }
+}

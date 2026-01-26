@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Vyklade_Magic_Circle_Particle_Pulse",
+      "LifeSpan": {
+        "Max": 2,
+        "Min": 2
+      },
+      "RotationOffset": {
+        "Pitch": 90
+      }
+    }
+  ],
+  "IsImportant": false,
+  "CullDistance": 100,
+  "LifeSpan": 2
+}

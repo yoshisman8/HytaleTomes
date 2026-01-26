@@ -11,7 +11,6 @@
   "ItemLevel": 10,
   "Model": "Items/Weapons/Spellbook/Book.blockymodel",
   "Texture": "Items/Weapons/Spellbook/Weapon_Crude_Spellbook.png",
-  "PlayerAnimationsId": "Spellbook",
   "IconProperties": {
     "Scale": 0.7,
     "Rotation": [
@@ -50,10 +49,9 @@
   },
   "ItemSoundSetId": "ISS_Weapons_Books",
   "Interactions": {
-    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Secondary": "Root_Spellbook_Secondary",
     "Primary": "Root_Spellbook_Primary",
-    "Ability1": "Root_Spellbook_Signature",
-    "Held": "Root_Spellbook_Held"
+    "Ability1": "Root_Spellbook_Signature"
   },
   "MaxDurability": 100,
   "InteractionVars": {
@@ -97,15 +95,8 @@
           },
           "PreviewStatConditions": {
             "DeployablePreview": 1
-          }
-        }
-      ]
-    },
-    "Spellbook_Held_Config": {
-      "Interactions": [
-        {
-          "Type": "ApplyEffect",
-          "EffectId": "Weapon_Grimoire_Mana_Regen"
+          },
+          "MaxPlacementDistance": 100
         }
       ]
     }
@@ -136,5 +127,6 @@
       }
     ],
     "TimeSeconds": 3
-  }
+  },
+  "Parent": "Weapon_Template_Spellbook"
 }

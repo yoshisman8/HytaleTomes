@@ -1,0 +1,47 @@
+{
+  "Type": "Selector",
+  "$Comment": "Length of Combat",
+  "RunTime": 0.083,
+  "Effects": {
+    "CameraEffect": "Sword_Bash",
+    "ItemAnimationId": "FocusBash",
+    "WorldSoundEventId": "SFX_Staff_Flame_Trap_Deploy",
+    "Particles": [
+      {
+        "TargetEntityPart": "Entity",
+        "SystemId": "Vyklade_Magic_Circle_Pulse",
+        "TargetNodeName": "Origin",
+        "PositionOffset": {
+          "Y": 1.5
+        }
+      }
+    ]
+  },
+  "Selector": {
+    "Id": "AOECircle",
+    "Range": 5
+  },
+  "HitBlock": {
+    "Interactions": [
+      "Block_Break_Adventure"
+    ]
+  },
+  "HitEntity": {
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "Var": "Guard_Bash_Damage",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Weapon_Spellbook_Secondary_Focus_Bash_Damage"
+          ]
+        }
+      }
+    ]
+  },
+  "Next": {
+    "Type": "Simple",
+    "RunTime": 0.333
+  }
+}

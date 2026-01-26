@@ -19,12 +19,14 @@
     "StartRadius": 5,
     "DamageInterval": 2,
     "AttackEnemies": true,
-    "DamageAmount": 5
+    "DamageAmount": 5,
+    "DeploySoundEventId": "SFX_Deployable_Totem_Slowing_Spawn",
+    "DespawnSoundEventId": "SFX_Deployable_Totem_Slowing_Despawn"
   },
   "PreviewStatConditions": {
     "DeployablePreview": 1
   },
-  "MaxPlacementDistance": 30,
+  "MaxPlacementDistance": 100,
   "Failed": {
     "Type": "Serial",
     "Interactions": [

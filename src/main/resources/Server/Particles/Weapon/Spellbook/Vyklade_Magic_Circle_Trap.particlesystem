@@ -7,9 +7,19 @@
         "Y": 0
       },
       "RotationOffset": {
-        "Pitch": 0
+        "Pitch": 90,
+        "Yaw": 0
       },
       "FixedRotation": true
+    },
+    {
+      "SpawnerId": "Vyklade_Magic_Circle_Particle_Shield",
+      "StartDelay": 1,
+      "FixedRotation": true,
+      "LifeSpan": {
+        "Max": 7,
+        "Min": 7
+      }
     }
   ],
   "IsImportant": false,

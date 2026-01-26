@@ -1,0 +1,34 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Deployables/Totem_Heal/Deployable_Totem_Heal_Spawn_01.ogg",
+        "Sounds/Deployables/Totem_Heal/Deployable_Totem_Heal_Spawn_02.ogg",
+        "Sounds/Deployables/Totem_Heal/Deployable_Totem_Heal_Spawn_03.ogg",
+        "Sounds/Deployables/Totem_Heal/Deployable_Totem_Heal_Spawn_04.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 2,
+        "MinVolume": -3
+      },
+      "StartDelay": 0,
+      "Volume": 0
+    },
+    {
+      "Looping": true,
+      "StartDelay": 1,
+      "Files": [
+        "Sounds/Magic/Heal.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -10,
+        "MaxPitch": 0
+      },
+      "Volume": -10
+    }
+  ],
+  "Volume": 4.0,
+  "Parent": "SFX_Attn_Moderate",
+  "AudioCategory": "AudioCat_Weapons"
+}

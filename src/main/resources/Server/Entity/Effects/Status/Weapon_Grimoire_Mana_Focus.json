@@ -6,6 +6,5 @@
   },
   "ValueType": "Percent",
   "Duration": 0.3,
-  "DamageCalculatorCooldown": 0.25,
-  "StatusEffectIcon": "Icons/ItemsGenerated/Potion_Regen_Mana_Small.png"
+  "DamageCalculatorCooldown": 0.25
 }

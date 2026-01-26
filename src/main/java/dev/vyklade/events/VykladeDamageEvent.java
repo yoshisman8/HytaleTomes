@@ -37,13 +37,13 @@ public class VykladeDamageEvent extends EntityEventSystem<EntityStore, Damage> {
                     damage.setCancelled(true);
                 } else {
                     EffectControllerComponent effectControllerComponent = store.getComponent(entityRef, EffectControllerComponent.getComponentType());
-                    assert effectControllerComponent != null;
+                    if (effectControllerComponent != null) {
+                        EntityEffect SlowEffect = EntityEffect.getAssetMap().getAsset("Spellbook_Slow");
 
-                    EntityEffect SlowEffect = EntityEffect.getAssetMap().getAsset("Spellbook_Slow");
-
-                    assert SlowEffect != null;
-
-                    effectControllerComponent.addEffect(entityRef, SlowEffect, commandBuffer);
+                        if (SlowEffect != null) {
+                            effectControllerComponent.addEffect(entityRef, SlowEffect, commandBuffer);
+                        }
+                    }
                 }
             }
         }

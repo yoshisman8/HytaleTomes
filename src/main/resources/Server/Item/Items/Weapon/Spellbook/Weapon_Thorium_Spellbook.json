@@ -9,8 +9,8 @@
   "Icon": "Icons/ItemsGenerated/Weapon_Thorium_Spellbook.png",
   "Quality": "Rare",
   "ItemLevel": 45,
-  "Model": "Items/Weapons/Spellbook/Spellbook_Thorium.blockymodel",
-  "Texture": "Items/Weapons/Spellbook/Weapon_Thorium_Spellbook_New.png",
+  "Model": "Items/Weapons/Spellbook/Weapon_Thorium_Spellbook.blockymodel",
+  "Texture": "Items/Weapons/Spellbook/Weapon_Thorium_Spellbook.png",
   "PlayerAnimationsId": "Spellbook",
   "IconProperties": {
     "Scale": 0.7,
